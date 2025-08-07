@@ -43,6 +43,10 @@ function App() {
   const clearAll = () => {
     toast.removeAllToasts();
   };
+
+  const moveToWiki = () => {
+    window.open('https://github.com/usrandhe/react-simple-notifications/wiki', '_blank', 'noopener,noreferrer')
+  }
   return (
     <>
       <div>
@@ -58,6 +62,7 @@ function App() {
       <button onClick={showInfo}>Show Info</button>
       <button onClick={showCustom}>Show Custom Toast</button>
       <button onClick={clearAll}>Remove All Toasts</button>
+      <button onClick={moveToWiki}>Follow WIKI for more usage</button>
     </>
   );
 }
